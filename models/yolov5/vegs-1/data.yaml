@@ -1,0 +1,14 @@
+names:
+- cucumber
+- eggplant
+- mushroom
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: vegs-ssboe
+  url: https://universe.roboflow.com/polyakovk/vegs-ssboe/dataset/1
+  version: 1
+  workspace: polyakovk
+test: ../test/images
+train: vegs-1/train/images
+val: vegs-1/valid/images
