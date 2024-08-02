@@ -29,10 +29,9 @@ st.image(PR_curve, caption='PR Curve', use_column_width=True)
 @st.cache_resource
 def get_model(conf):
     model = torch.hub.load(
-        repo_or_dir='./models/yolov5/',
+        repo_or_dir='ultralytics/yolov5',
         model='custom',
-        path='./models/yolov5/best_n.pt',
-        source='local'
+        path='./models/yolov5/best_n.pt'
     )
     model.eval()
     model.conf = conf
